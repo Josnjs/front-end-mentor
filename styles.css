@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    padding: 9rem;
+}
+
+.card {
+
+    margin: 0 auto;
+    display: flex;
+    width: 700px;
+
+}
+
+img {
+    width: 360px;
+    border-radius: 10px 0 0 10px;
+}
+
+.right_card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 10px 10px 0;
+    width: 100%;
+}
+
+h3 {
+    margin: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+h1 {
+    margin: 2rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+p {
+    margin: 2rem;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+.price {
+    margin: 2rem;
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    display: flex;
+    align-items: center;
+
+}
+
+span {
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    margin-left: 1rem;
+    text-decoration: line-through;
+}
+
+button {
+    margin: 2rem;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    width: 240px;
+    height: 60px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', serif;
+}
+
+footer {
+    margin: 44px;
+    padding: 2rem;
+    text-align: center;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+}
+
+footer,
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+
+/*------------------------------------------------------------------------*/
+
+
+/*I couldn´t use the mobile image :( */
+@media screen and (max-width: 600px) {
+
+
+    .card {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+
+    }
+
+    img {
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
+
+    body {
+        padding: 1rem;
+    }
+
+    .right_card {
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+    }
+
+    footer {
+        margin: 22px auto;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    footer,
+    a {
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);
+    }
+}
